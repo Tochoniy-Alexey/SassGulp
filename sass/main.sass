@@ -1,0 +1,354 @@
+@import bourbon
+@import vars.sass
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+@import "app/libs/Magnific-Popup/magnific-popup.sass"
+@import "app/libs/owl-carousel/assets/owl.carousel.sass"
+@import "app/libs/font-awesome/css/font-awesome.sass"
+
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+
+
+.our-servises
+	position: relative
+	h3
+		position: absolute
+		margin: -17px 495px
+		padding: 0 20px
+		text-align: center
+		background-color: $blue
+		border-radius: 5px
+		font-family: "BebasRegular", sans-serif
+		font-size: em(22px)
+		color:#ffffff
+		text-transform: uppercase
+		z-index: 10
+
+.item-vertical
+	margin-top: 48px
+
+	&:hover
+		.rounded-img-wrap
+			transform: scale(1.15)
+	text-align: center
+	h4
+		font-size: em(17px)
+		font-family: "Bree Serif W01 Light", sans-serif
+		text-transform: capitalize
+		color: #515862
+		margin-top: 23px
+		margin-bottom: 5px
+	p
+		font-size: em(11px)
+		font-family: "Ubuntu Bold",sans-serif
+		color: #7C8289
+		margin-top: 0
+		margin-bottom: 38px
+	a
+		color: $blue
+
+.our_portfolio
+	h2, h3
+		display: inline-block
+		color: $accent
+		font-family: "Bree Serif W01 Light", sans-serif
+		font-size: em(30px)
+		margin-top: 54px
+		margin-left: 50px
+	h3
+		font-size: 20px
+		margin: 20px 0 0 20px
+	p
+		color: #b1bcc7
+		font-size: 11px
+		margin: 10px 0 77px 20px
+	
+.portfolio
+	padding: 25px
+	.portfolio-item
+		position: relative
+		display: block
+		margin: 30px 10px
+		font-family: "Bree_SerifRegular"
+		color: rgba(255, 255, 255, .7)
+		font-size: 17px
+		border: 10px, solid, #E9E9E9
+		overflow: hidden
+
+		img
+			+mt(.5s)
+		&:hover
+			.portfolio-item-content
+				opacity: 1
+				transform: scale(.95)
+			img
+				transform: scale(1.1)
+		&-content
+			position: absolute
+			padding-top: 28%
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background-color: rgba(190, 190, 190, .7)
+			text-align: center
+			opacity: 0
+			+mt(.5s)
+			transform: scale(1.1)
+			
+.portfolio-popup
+	position: relative
+	background-color: #F4F4F4
+	display: block
+	max-width: 1000px
+	margin: 3% auto
+	text-align: center
+	padding-top: 25px
+	+mt(.2s)
+	.h2
+		color: $accent
+		font-size: em(20px)
+	
+	
+.we_offer
+	text-align: center
+	h1
+		font-family: "BebasRegular", sans-serif
+		font-size: em(40px)
+		color: $blue
+		margin: 20px 0 0 0
+	p
+		margin: 0
+		font-size: em(13px)
+
+.offer_wraper
+	padding: 30px
+			
+.offer_items
+	display: block
+	text-align: left
+	padding: 0 25px
+	h4
+		color: #2B99CC
+		font-family: "Bree Serif W01 Light", sans-serif
+		font-size: em(17px)
+		margin-bottom: 10px
+	p
+		font-size: em(11px)
+
+.a_details
+	
+	font-family: "Bree Serif W01 Light", sans-serif
+	color: #027089
+	font-size: 15px
+	&:hover
+		color: #2B99CC
+
+.line
+	height: 1px
+	width: 1140px
+	margin-top: 25px
+	margin-bottom: 23px
+
+.testimonials
+	h1
+		color: $blue
+		text-transform: uppercase
+		font-family: "BebasRegular", sans-serif
+		font-size: em(37px)
+		text-align: center
+		margin: 0 0 15px 0
+		padding: 0
+	h2
+		color: #515862
+		font-family: "Bree Serif W01 Light", sans-serif
+		text-align: center
+		font-size: em(25px)
+		line-height: 110%
+		margin: 0
+
+.face-wraper
+	position: relative
+	text-align: center
+	height: 89px
+	margin-top: 105px
+.face
+	height: 89px
+	width: 68px
+	background-repeat: no-repeat
+	display: inline-block
+	position: relative
+	
+	&:before
+		content: attr(data-description)
+		display: block
+		font-family: "UbuntuRegular"
+		font-size: 14px
+		color: $accent
+		position: absolute
+		width: 200px
+		top: -33px
+		left: 50%
+		margin-left: -100px
+		opacity: 0
+		transition: .25s ease-in-out	
+
+.face-w
+	background: url("img/faces/woman.png")
+	&:hover
+		background: url("img/faces/woman-1.png")
+		background-repeat: no-repeat
+		&:before
+			opacity: 1
+			top: -50px
+
+.face-m
+	background: url("img/faces/man.png")
+	&:hover
+		background: url("img/faces/man-2.png")
+		background-repeat: no-repeat
+		&:before
+			opacity: 1
+			top: -50px
+
+.footer
+	h1
+		color: $accent
+		font-family: "BebasRegular", sans-serif
+		text-transform: uppercase
+		font-size: em(29px)
+		padding: 0
+		margin-bottom: 10px
+	p
+		color: #86939A
+		font-size: em(13px)
+		padding: 0
+		margin: 0
+p.p_line
+	border-bottom: 1px solid #556270	
+	padding-bottom: 10px
+	margin-bottom: 10px
+
+.footer_item
+	margin: 35px 0 35px 0
+
+.twitter
+	a
+		color: $blue
+		text-decoration: none
+		font-size: em(12px)
+		padding: 0
+		margin: 0
+	p
+		width: 211px
+
+.newsletter
+	p
+		width: 267px
+		line-height: 174%
+	p.email
+		color: $blue
+		margin-bottom: 15px
+.scatch-wrap
+	display: block
+	float: left
+	width: 58px
+	height: 58px
+	margin-right: 10px
+	margin-top: 5px
+	img
+		max-width: 100%
+		&:hover
+			transform: scale(1.2)
+			+mt(.2s)
+.scatch
+	border-bottom: 1px solid #556270	
+	padding-bottom: 10px
+	margin-bottom: 10px
+	width: 230px
+	a
+		font-size: em(12px)
+		text-decoration: none
+.website
+	a
+		font-size: em(12px)
+		text-decoration: none
+
+.contact
+	img
+		float: left
+		display: block
+		margin-right: 12px
+			
+	.phone1
+		margin-top: 20px
+		
+	.convert
+		margin-top: 30px
+		img
+			margin-top: 8px
+			margin-right: 12px
+
+.footer-wraper
+	margin: 0 85px
+	.col-md-4
+		padding-right: 0
+	.col-md-2
+		padding-left: 0
+	.pl
+		padding-left: 0
+
+
+
+.top
+	position: fixed
+	bottom: 38px
+	right: -120px
+	width: 50px
+	height: 50px
+	border-radius: 10em
+	cursor: pointer
+	background-color: #fff
+	text-align: center
+	opacity: .4
+	color: $blue
+	+mt(.5s)
+	z-index: 5
+	.fa
+		font-size: 32px
+		margin-top: 8px
+	&:hover
+		opacity: 1
+		background-color: $accent
+	&.active
+		right: 10px
+
+
+//ALWAYS END
+@import media
+
+
